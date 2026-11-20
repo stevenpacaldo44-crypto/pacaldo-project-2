@@ -2278,3 +2278,11 @@ section,
   padding: 10px 18px;
 }
 .navmenu .dropdown ul li { width: 100%; }
+
+/*--------------------------------------------------------------
+# KCC Anchor + Visibility Fix
+--------------------------------------------------------------*/
+section[id] { scroll-margin-top: 90px; }
+[data-aos] { opacity: 1 !important; transform: none !important; }
+.navmenu .dropdown ul { min-width: 240px; max-width: 280px; }
+.navmenu .dropdown ul li a { white-space: normal; line-height: 1.4; padding: 10px 18px; }
