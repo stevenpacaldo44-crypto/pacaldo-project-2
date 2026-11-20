@@ -2263,3 +2263,18 @@ section,
 .counts .stats-item span { color: var(--gold-color); }
 .courses .course-item .category { background: var(--gold-color); color: #0B2A4A; }
 .footer .footer-links ul a:hover { color: var(--gold-color); }
+
+/*--------------------------------------------------------------
+# KCC Dropdown Fix - keep Colleges menu in one clean box
+--------------------------------------------------------------*/
+.navmenu .dropdown ul {
+  min-width: 240px;
+  max-width: 280px;
+  white-space: normal;
+}
+.navmenu .dropdown ul li a {
+  white-space: normal;
+  line-height: 1.4;
+  padding: 10px 18px;
+}
+.navmenu .dropdown ul li { width: 100%; }
