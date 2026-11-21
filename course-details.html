@@ -576,15 +576,28 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-<!-- Added only: send Course Details dropdown CMAT / CEAS / COC to the college bar in Course Details, old links untouched -->
+<!-- Added only: send Course Details dropdown CMAT / CEAS / COC to the college bar in Course Details, old links untouched. Runs immediately, no waiting, so 1 click works. -->
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+(function () {
   var map = { 'CMAT': '#cmat', 'CEAS': '#ceas', 'COC': '#coc' };
   document.querySelectorAll('.dropdown ul li a').forEach(function (a) {
     var t = a.textContent.trim();
     if (map[t]) { a.href = 'course-details.html' + map[t]; }
   });
-});
+})();
+</script>
+
+<!-- Added only: on load, scroll to #cmat / #ceas / #coc even if the template resets scroll -->
+<script>
+(function () {
+  function go() {
+    var h = window.location.hash;
+    if (!h) return;
+    var el = document.querySelector(h);
+    if (el) { el.scrollIntoView({ behavior: 'auto', block: 'start' }); }
+  }
+  window.addEventListener('load', function () { setTimeout(go, 100); setTimeout(go, 600); });
+})();
 </script>
 </body>
 
