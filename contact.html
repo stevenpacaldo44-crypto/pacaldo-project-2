@@ -258,6 +258,16 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+<!-- Added only: send Course Details dropdown CMAT / CEAS / COC to the college bar in Course Details, old links untouched -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var map = { 'CMAT': '#cmat', 'CEAS': '#ceas', 'COC': '#coc' };
+  document.querySelectorAll('.dropdown ul li a').forEach(function (a) {
+    var t = a.textContent.trim();
+    if (map[t]) { a.href = 'course-details.html' + map[t]; }
+  });
+});
+</script>
 </body>
 
 </html>
