@@ -29,52 +29,68 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-<!-- KCC THEME - Blue & Gold to match KCC Seal -->
+<!-- KCC THEME - BLUE MAJORITY, GOLD ACCENT ONLY -->
 <style>
 :root{
-  --kcc-navy:#0B2A4A; --kcc-navy2:#0E3560; --kcc-gold:#C9A227; --kcc-gold2:#E8C547;
-  --kcc-cream:#FFF8E1; --kcc-light:#F5F1DE;
-  --accent-color:#C9A227 !important; --heading-color:#0B2A4A !important;
+  --kcc-navy:#0B2A4A; --kcc-navy2:#0E3560; --kcc-blue:#123F6B; --kcc-gold:#C9A227;
+  --accent-color:#0B2A4A !important; --heading-color:#0B2A4A !important;
 }
 body{color:#333}
-a{color:#0B2A4A} a:hover{color:#C9A227}
+/* Links - blue */
+a{color:#0B2A4A} a:hover{color:#123F6B}
 h1,h2,h3,h4,h5,h6,.sitename{color:#0B2A4A}
-/* Header + nav */
-.header{background:#fff;border-bottom:3px solid #C9A227}
+/* Header - white with thin gold line, blue text */
+.header{background:#fff;border-bottom:2px solid #C9A227}
 .header .logo span,.kcc-logo-name{color:#0B2A4A !important}
-.kcc-logo-tag{color:#C9A227 !important}
-.navmenu a{color:#0B2A4A} .navmenu a:hover,.navmenu .active{color:#C9A227 !important}
-.btn-getstarted,.btn-get-started,.more-btn,.btn-primary,.email-form input[type="submit"]{background:#C9A227 !important;color:#0B2A4A !important;border:1px solid #C9A227 !important;font-weight:800}
-.btn-getstarted:hover,.btn-get-started:hover,.more-btn:hover{background:#0B2A4A !important;color:#C9A227 !important;border-color:#0B2A4A !important}
-/* Section titles / eyebrows */
+.kcc-logo-tag{color:#8A6D0A !important}
+.navmenu a{color:#0B2A4A} .navmenu a:hover,.navmenu .active{color:#0B2A4A !important;border-bottom:2px solid #C9A227}
+/* Buttons - BLUE majority */
+.btn-getstarted,.btn-get-started,.more-btn,.btn-primary,.email-form input[type="submit"],.btn-get-started,.pricing-item .btn-buy{
+  background:#0B2A4A !important;color:#fff !important;border:1px solid #0B2A4A !important;font-weight:800}
+.btn-getstarted:hover,.btn-get-started:hover,.more-btn:hover,.btn-primary:hover{
+  background:#123F6B !important;color:#fff !important;border-color:#123F6B !important}
+/* Hero - keep picture, blue overlay text, blue button */
+.hero h2{color:#fff !important} .hero p{color:#EDEDED}
+.hero .btn-get-started{background:#0B2A4A !important;color:#fff !important}
+/* Section titles - blue, gold only as small underline */
 .section-title h2,.section-title p,.kcc-titlebar h2{color:#0B2A4A !important}
 .section-title h2::after,.section-title p::after{background:#C9A227 !important}
-.kcc-eyebrow,.kcc-eyebrow2{color:#C9A227 !important}
-/* Hero */
-.hero h2{color:#fff !important} .hero p{color:#EDEDED}
-.hero .btn-get-started{background:#C9A227;color:#0B2A4A}
-/* Cards / courses / events / trainers */
-.course-item,.card,.stats-item,.why-box,.kcc-head-card,.pricing-item,.service-item{border-top:3px solid #C9A227 !important}
-.course-item h3 a,.card-title a{color:#0B2A4A} .course-item h3 a:hover,.card-title a:hover{color:#C9A227}
+.kcc-eyebrow,.kcc-eyebrow2{color:#0B2A4A !important}
+.kcc-eyebrow::before,.kcc-eyebrow::after,.kcc-eyebrow2::before,.kcc-eyebrow2::after{background:#C9A227 !important}
+/* Cards - blue top border, gold only as thin bottom line */
+.course-item,.card,.stats-item,.why-box,.pricing-item,.service-item{
+  border:1px solid #D9E1EC !important;border-top:4px solid #0B2A4A !important}
+.course-item h3 a,.card-title a{color:#0B2A4A} .course-item h3 a:hover,.card-title a:hover{color:#123F6B}
 .price,.pricing-item h4,.stats-item span{color:#0B2A4A !important}
-.stats-item p,.course-item .category{color:#C9A227 !important;font-weight:700}
-/* Badges, icons */
-.bi{color:#C9A227} .social-links a,.social a{background:#0B2A4A !important;color:#C9A227 !important}
-.social-links a:hover{background:#C9A227 !important;color:#0B2A4A !important}
-/* Footer */
-.footer{background:#0B2A4A !important;color:#fff} .footer h4,.footer .sitename{color:#C9A227 !important}
-.footer a{color:#EDEDED} .footer a:hover{color:#C9A227}
-.copyright,.credits{color:#ccc} .credits a{color:#C9A227}
-/* Forms / inputs focus */
-input:focus,textarea:focus,select:focus{border-color:#C9A227 !important;box-shadow:0 0 0 2px rgba(201,162,39,.2) !important}
-/* Scroll top / preloader accent */
-#scroll-top{background:#C9A227 !important;color:#0B2A4A !important}
-#preloader:before{border-color:#C9A227 #0B2A4A #C9A227 #0B2A4A !important}
+.stats-item p,.course-item .category{color:#0B2A4A !important;font-weight:700}
+/* Heads cards - blue majority */
+.kcc-head-card{border-top:5px solid #0B2A4A !important}
+.kcc-head-card.gold{border-top:5px solid #0B2A4A !important}
+.kcc-head-card::after{background:#C9A227 !important;height:3px !important}
+.kcc-initial.navy-bg,.kcc-initial.gold-bg{background:#0B2A4A !important;color:#fff !important}
+.kcc-role.gold-badge,.kcc-role.navy-badge{background:#E8EEF5 !important;color:#0B2A4A !important}
+.kcc-divider{background:#C9A227 !important}
+/* Icons - blue */
+.bi{color:#0B2A4A}
+.social-links a,.social a{background:#0B2A4A !important;color:#fff !important}
+.social-links a:hover{background:#123F6B !important;color:#fff !important}
+/* Why Us box - blue */
+.why-box{background:#0B2A4A !important;color:#fff} .why-box h3{color:#fff !important} .why-box p{color:#EDEDED}
+/* Counts - blue numbers */
+.counts{background:#EAF0F7 !important}
+/* Footer - deep blue */
+.footer{background:#0B2A4A !important;color:#fff} .footer h4,.footer .sitename{color:#fff !important}
+.footer a{color:#D9E1EC} .footer a:hover{color:#C9A227}
+.copyright,.credits{color:#B8C6D8} .credits a{color:#C9A227}
+/* Forms */
+input:focus,textarea:focus,select:focus{border-color:#0B2A4A !important;box-shadow:0 0 0 2px rgba(11,42,74,.15) !important}
+#scroll-top{background:#0B2A4A !important;color:#fff !important}
+#preloader:before{border-color:#0B2A4A #C9A227 #0B2A4A #C9A227 !important}
 </style>
 <!-- /KCC THEME -->
 
 
-  <!-- =======================================================
+<!-- =======================================================
   * Template Name: Mentor - customized for Kabankalan Catholic College, Inc. (Project 2)
   * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
   * Updated: Jul 07 2025 with Bootstrap v5.3.7
