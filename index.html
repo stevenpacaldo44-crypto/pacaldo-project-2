@@ -336,124 +336,97 @@
 
     
 
-    <!-- Trainers Section -->
+    <!-- Trainers Section - HEADS, NO PHOTOS, TEXT + DESIGN ONLY -->
     <section id="trainers" class="section trainers">
-      <!-- Title Bar on top, before the object - like an essay heading -->
+      <style>
+        .kcc-head-card{background:#fff;border:1px solid #eee;border-radius:16px;padding:32px 24px;text-align:center;box-shadow:0 6px 20px rgba(11,42,74,.07);height:100%;transition:transform .2s;position:relative;overflow:hidden}
+        .kcc-head-card:hover{transform:translateY(-4px)}
+        .kcc-head-card.gold{border-top:5px solid #C9A227}
+        .kcc-head-card.navy{border-top:5px solid #0B2A4A}
+        .kcc-head-card::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,#0B2A4A,#C9A227)}
+        .kcc-initial{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;margin:0 auto 18px;letter-spacing:.5px;border:3px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+        .kcc-initial.navy-bg{background:#0B2A4A;color:#C9A227}
+        .kcc-initial.gold-bg{background:#C9A227;color:#0B2A4A}
+        .kcc-role{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.6px;padding:7px 14px;border-radius:20px;text-transform:uppercase}
+        .kcc-role.gold-badge{background:#FFF3CD;color:#7A5A00}
+        .kcc-role.navy-badge{background:#EEF2FF;color:#0B2A4A}
+        .kcc-head-card h4{font-size:18px;color:#0B2A4A;margin:16px 0 8px;line-height:1.35;font-weight:800}
+        .kcc-head-card p{font-size:14px;line-height:1.65;color:#666;margin:0}
+        .kcc-divider{width:44px;height:3px;background:#C9A227;margin:14px auto 0;border-radius:2px}
+        .kcc-eyebrow2{display:flex;align-items:center;justify-content:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#C9A227;margin:0 0 8px}
+        .kcc-eyebrow2::before,.kcc-eyebrow2::after{content:"";display:block;width:40px;height:2px;background:#C9A227}
+      </style>
       <div class="container kcc-titlebar" data-aos="fade-up">
-        <p class="kcc-eyebrow">KABANKALAN CATHOLIC COLLEGE</p>
+        <p class="kcc-eyebrow2">KABANKALAN CATHOLIC COLLEGE</p>
         <h2>Heads, Faculty and Staff</h2>
+        <p style="color:#777;font-size:14px;margin:12px 0 0;">Leadership guided by faith, service, and academic excellence.</p>
       </div>
 
       <div class="container">
+        <div class="row gy-4">
 
-        <div class="row gy-5">
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="kcc-head-card navy">
+              <div class="kcc-initial navy-bg">RL</div>
+              <span class="kcc-role gold-badge">School President</span>
               <h4>Rev. Fr. Richard L. Lachica, MAEd</h4>
-              <span>School President</span>
-              <p>Leads the entire institution's administration, strategic direction, and Catholic mission.</p>
+              <div class="kcc-divider"></div>
+              <p style="margin-top:14px;">Leads the entire institution&apos;s administration, strategic direction, and Catholic mission.</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="assets/img/person/person-f-8.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="kcc-head-card gold">
+              <div class="kcc-initial gold-bg">ES</div>
+              <span class="kcc-role navy-badge">CMAT Dean</span>
               <h4>Dr. Eliand Rey C. Soliman, LPT, DBA, CMMS</h4>
-              <span>CMAT Dean — College of Management, Accountancy & Technology</span>
-              <p>Oversees business, accountancy, hospitality, and IT degree programs.</p>
+              <div class="kcc-divider"></div>
+              <p style="margin-top:14px;">CMAT Dean &mdash; College of Management, Accountancy &amp; Technology. Oversees business, accountancy, hospitality, and IT degree programs.</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="assets/img/person/person-m-6.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="kcc-head-card navy">
+              <div class="kcc-initial navy-bg">MH</div>
+              <span class="kcc-role gold-badge">CEAS Dean</span>
               <h4>Dr. Ma. Rona A. Hizole, LPT, EdD</h4>
-              <span>CEAS Dean — College of Education, Arts & Sciences</span>
-              <p>Heads teacher-training, liberal arts, and general education courses.</p>
+              <div class="kcc-divider"></div>
+              <p style="margin-top:14px;">CEAS Dean &mdash; College of Education, Arts &amp; Sciences. Heads teacher-training, liberal arts, and general education courses.</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-              <img src="assets/img/person/person-f-4.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="kcc-head-card gold">
+              <div class="kcc-initial gold-bg">AC</div>
+              <span class="kcc-role navy-badge">COC Dean</span>
               <h4>Dr. Alfredo M. Calama-an, RCrim</h4>
-              <span>COC Dean — College of Criminology</span>
-              <p>Directs the Criminology program, focusing on law enforcement, forensic science, and public safety.</p>
+              <div class="kcc-divider"></div>
+              <p style="margin-top:14px;">COC Dean &mdash; College of Criminology. Directs the Criminology program, focusing on law enforcement, forensic science, and public safety.</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-            <div class="member-img">
-              <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="kcc-head-card navy">
+              <div class="kcc-initial navy-bg">JL</div>
+              <span class="kcc-role gold-badge">High School Principal</span>
               <h4>Mr. Jasper Lobaton</h4>
-              <span>High School Principal — Junior & Senior High School</span>
-              <p>Manages Junior and Senior High School academics and college-preparatory tracks.</p>
+              <div class="kcc-divider"></div>
+              <p style="margin-top:14px;">High School Principal &mdash; Junior &amp; Senior High School. Manages Junior and Senior High School academics and college-preparatory tracks.</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="kcc-head-card gold">
+              <div class="kcc-initial gold-bg">RP</div>
+              <span class="kcc-role navy-badge">Elementary Principal</span>
               <h4>Ms. Rhoda Jane T. Porras, LPT</h4>
-              <span>Elementary Principal — Kindergarten to Grade 6</span>
-              <p>Supervises foundational basic education from Kindergarten to Grade 6.</p>
+              <div class="kcc-divider"></div>
+              <p style="margin-top:14px;">Elementary Principal &mdash; Kindergarten to Grade 6. Supervises foundational basic education from Kindergarten to Grade 6.</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
         </div>
-
       </div>
-
     </section><!-- /Trainers Section -->
 
   
